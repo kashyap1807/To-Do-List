@@ -5,16 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <style>
+        body {
+            background: linear-gradient(18deg, rgb(17, 200, 220), rgb(90, 67, 121));
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: 'Share Tech Mono', monospace;
+            } 
+         
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="row">To-Do List</h1>
+        <h1 style="font-size:larg;">To-Do List :</h1>
+        <hr>
         <br>
         <div class="row">
 
             <form>
                 <div class="input-group">
-                    <input type="text" placeholder="Write-item" id="box" style="width:30vw">
+                    <input type="text" placeholder="item-list" id="box" style="width:30vw">
                 </div>
 
                 <br><br>
@@ -25,14 +37,16 @@
 
                 <br>
                 <hr>
-                <p>(for remove click on the item)</p>
+                <p>[*for remove click on the item]</p>
             </form>
         </div>
         <hr>
-        <div class="list">
-            <h2>List Of The Item :</h2>
+        <div >
+            <h2>List Of The Item : </h2>
+            
         </div>
-        <div class="row" >
+        <hr>
+        <div >
             <ul id="list_item"></ul>
         </div>
     </div>
